@@ -1,0 +1,19 @@
+{
+  "appId": "it.nolecom.appviewerelectron",
+  "productName": "RWMS",
+  "files": [
+    "**/*"
+  ],
+  "mac": {
+    "target": "dmg",
+    "icon": "assets/icons/rwms/rwms_icon.icns"
+  },
+  "win": {
+    "target": "nsis",
+    "icon": "assets/icons/rwms/rwms_icon.ico"
+  },
+  "linux": {
+    "target": "AppImage",
+    "icon": "assets/icons/rwms/rwms_icon.png"
+  }
+}

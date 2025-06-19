@@ -1,0 +1,19 @@
+{
+  "name": "app-viewer-electron",
+  "version": "1.0.0",
+  "author": "Nolecom",
+  "private": true,
+  "description": "Electron app to view a configurable web page.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "build:macos": "electron-builder --mac",
+    "build:win": "electron-builder --win",
+    "build:linux": "electron-builder --linux"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.0.0"
+  }
+}
