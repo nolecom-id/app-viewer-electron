@@ -32,6 +32,8 @@ function createWindow() {
   win.loadFile("index.html");
   win.webContents.on("did-finish-load", () => {
     win.webContents.send("set-url", url);
+    // Set the window title after load
+    win.setTitle(config.appName || "App Viewer Electron");
   });
 }
 
