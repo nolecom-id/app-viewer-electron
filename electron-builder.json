@@ -9,7 +9,15 @@
     "icon": "assets/icons/rwms/rwms_icon.icns"
   },
   "win": {
-    "target": "nsis",
+    "target": [
+      {
+        "target": "nsis",
+        "arch": [
+          "x64",
+          "ia32"
+        ]
+      }
+    ],
     "icon": "assets/icons/rwms/rwms_icon.ico"
   },
   "linux": {
