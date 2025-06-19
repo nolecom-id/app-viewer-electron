@@ -21,7 +21,10 @@ function createWindow() {
     minWidth: 360,
     minHeight: 640,
     title: config.appName || "App Viewer Electron",
-    icon: path.join(__dirname, config.appIcon || "assets/icons/default.png"),
+    icon: path.join(
+      __dirname,
+      config.appIcon || "assets/icons/nolecom_icon.png"
+    ),
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
       nodeIntegration: false,
