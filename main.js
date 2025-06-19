@@ -31,8 +31,7 @@ function createWindow() {
       contextIsolation: true,
     },
   });
-
-  win.loadFile("index.html");
+  win.loadURL(config.url ?? "http://localhost:8080");
   win.webContents.on("did-finish-load", () => {
     win.webContents.send("set-url", url);
     // Set the window title after load
