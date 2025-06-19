@@ -21,7 +21,12 @@
     "icon": "assets/icons/rwms/rwms_icon.ico"
   },
   "linux": {
-    "target": "AppImage",
+    "target": {
+      "target": "AppImage",
+      "arch": [
+        "x64"
+      ]
+    },
     "icon": "assets/icons/rwms/rwms_icon.png"
   }
 }
